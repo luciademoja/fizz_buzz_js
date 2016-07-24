@@ -12,6 +12,7 @@ function fizzBuzz(number) {
     return number;
 }
 
+
 function hasZeroReminder(number, dividend) {
   return number % dividend == 0;
 }
