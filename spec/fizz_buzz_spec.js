@@ -16,6 +16,14 @@ describe("FizzBuzz", function() {
   it("Check if number is divisible by 3", function() {
       expect(subject.divisibleByThree(3)).toBe(true);
   });
+
+  it("Check if number is divisible by 5", function() {
+      expect(subject.divisibleByFive(5)).toBe(true);
+  });
+
+  it("Check if number is divisible by 15", function() {
+      expect(subject.divisibleByFifteen(15)).toBe(true);
+  });
 });
 
 
