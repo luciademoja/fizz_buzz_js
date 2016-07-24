@@ -5,11 +5,16 @@ describe("FizzBuzz", function() {
     subject = new FizzBuzz();
   });
 
-  it("Checks if a given number is divisible by 3", function() {
-    var output = subject.divisibleByThree(3);
-    expect(output).toEqual('Fizz');
+  it("Check if number has zero reminder", function() {
+      expect(subject.hasZeroReminder(3, 3)).toBe(true);
   });
 });
+
+//   it("Checks if a given number is divisible by 3", function() {
+//     var output = subject.divisibleByThree(3);
+//     expect(output).toEqual('Fizz');
+//   });
+// });
 
 //   it("#mySecondFunction adds two numbers together", function() {
 //
