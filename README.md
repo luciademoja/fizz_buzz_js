@@ -1,5 +1,3 @@
-To be started
-
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/karma-jquery-jasmine_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CraftAcademy/karma-jquery-jasmine_boilerplate?branch=master)
@@ -14,66 +12,10 @@ To be started
   - [Karma Coveralls](https://github.com/caitp/karma-coveralls)
   - [Karma Spec Reporter](https://github.com/mlex/karma-spec-reporter)
 
-####Services
-* [Travis](https://travis-ci.org/) for Continuous Integration
-* [Coveralls](https://coveralls.io/) for Test Coverage
+####Testing frameworks
+* [Travis] for Continuous Integration
+* [Coveralls] for Test Coverage
 
-####Set up
-Fork or download this repo (using `git clone`) and modify the files to suite your testing needs.
-
-You can also use SVN to download this repo to your new project folder. On OSX you can install SVN using Homebrew.
-```
-$ brew install subversion
-```
-
-Create a new folder and `cd` into it. Run the `svn export` command to download files.
-
-```
-$ svn export https://github.com/CraftAcademy/karma-jquery-jasmine_boilerplate/trunk . --force
-```
-Once downloaded, you need to install all dependencies. Run
-```
-$ npm install
-```
 
 ####Usage
-You can use this setup to test your units and your jQuery events. Place your JavaScript code in `assets/js/` folder and partials in `spec/fixtures/` folder.
-
-Your specs need to be end with `_spec.js` (e.g. `fizz_buzz_spec.js`)
-
-Run tests with
-```
-$ npm test
-
-# or
-
-$ karma start karma.conf.js
-```
-
-####Adding tests
-I have included some basic specs and `js` code for you to examine. Basically you need to build up your test environment and tear it down afterwards.
-You can have different setups by nesting your `describe` blocks/functions.
-
-```javascript
-# spec/my_spec.js
-describe("Given my code", function () {
-
-	beforeEach(function () {
-		/* ... Set up your test ... */
-	});
-
-	afterEach(function () {
-		/* ... Tear it down ... */
-	});
-
-	describe("When ...", function () {
-
-		beforeEach(function () {
-		  /* ... Context specific setup ... */
-		});
-
-		it("Then...", function () {
-			expect(true).toEqual(true);
-		});
-	});
-});
+All the JavaScript code is to be found in `assets/js/` folder and partials in `spec/fixtures/` folder.
