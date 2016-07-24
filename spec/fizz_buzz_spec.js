@@ -1,42 +1,34 @@
-describe("FizzBuzz", function() {
-  var subject;
-
-  beforeEach(function() {
-    subject = new FizzBuzz();
-  });
+describe("fizzBuzz", function() {
 
   it("Check if number has zero reminder", function() {
-      expect(subject.hasZeroReminder(3, 3)).toBe(true);
+      expect(hasZeroReminder(3, 3)).toBe(true);
   });
 
   it("Check if reminder is different than 0", function() {
-      expect(subject.hasZeroReminder(4, 3)).toBe(false);
+      expect(hasZeroReminder(4, 3)).toBe(false);
   });
 
   it("Check if number is divisible by 3", function() {
-      expect(subject.divisibleByThree(3)).toBe(true);
+      expect(divisibleByThree(3)).toBe(true);
   });
 
   it("Check if number is divisible by 5", function() {
-      expect(subject.divisibleByFive(5)).toBe(true);
+      expect(divisibleByFive(5)).toBe(true);
   });
 
   it("Check if number is divisible by 15", function() {
-      expect(subject.divisibleByFifteen(15)).toBe(true);
+      expect(divisibleByFifteen(15)).toBe(true);
   });
 
-  describe("FizzBuzz.fizzBuzz", function() {
+  it("Tests for divisibleByFifteen to return FizzBuzz", function() {
+    expect(fizzBuzz(15)).toEqual('FizzBuzz');
+  });
 
-    it("Tests for divisibleByFifteen to return FizzBuzz", function() {
-      expect(subject.fizzBuzz(15)).toEqual('FizzBuzz');
-    });
+  it("Tests for divisibleByFive to return Buzz", function() {
+    expect(fizzBuzz(5)).toEqual('Buzz');
+  });
 
-    it("Tests for divisibleByFive to return Buzz", function() {
-      expect(subject.fizzBuzz(5)).toEqual('Buzz');
-    });
-
-    it("Tests for divisibleByThree to return Fizz", function() {
-      expect(subject.fizzBuzz(3)).toEqual('Fizz');
-    });
+  it("Tests for divisibleByThree to return Fizz", function() {
+    expect(fizzBuzz(3)).toEqual('Fizz');
   });
 });
