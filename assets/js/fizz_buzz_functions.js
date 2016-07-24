@@ -7,3 +7,11 @@ FizzBuzz.prototype.hasZeroReminder = function(number, dividend) {
 FizzBuzz.prototype.divisibleByThree = function (number) {
   return this.hasZeroReminder(number, 3);
 }
+
+FizzBuzz.prototype.divisibleByFive = function (number) {
+  return this.hasZeroReminder(number, 5);
+}
+
+FizzBuzz.prototype.divisibleByFifteen = function (number) {
+  return this.hasZeroReminder(number, 15);
+}
