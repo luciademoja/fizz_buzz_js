@@ -5,7 +5,7 @@ describe("fizzBuzz", function() {
   });
 
   it("Check if reminder is different than 0", function() {
-      expect(hasZeroReminder(4, 3)).toBe(false);
+      expect(fizzBuzz(4)).toEqual(4);
   });
 
   it("Check if number is divisible by 3", function() {
