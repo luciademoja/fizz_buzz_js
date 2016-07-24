@@ -1,5 +1,12 @@
 function FizzBuzz() {};
 
+FizzBuzz.prototype.fizzBuzz = function(number) {
+  if(this.divisibleByFifteen(number)) {
+    return 'FizzBuzz';
+  }
+  else
+    return number;
+}
 FizzBuzz.prototype.hasZeroReminder = function(number, dividend) {
   return number % dividend == 0;
 }

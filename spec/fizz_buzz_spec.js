@@ -26,15 +26,9 @@ describe("FizzBuzz", function() {
   });
 
   describe("FizzBuzz.fizzBuzz", function() {
-    it("Tests for divisibleByThree to return Fizz", function() {
-      expect(subject.fizzBuzz(6)).toEqual('Fizz');
+
+    it("Tests for divisibleByFifteen to return FizzBuzz", function() {
+      expect(subject.fizzBuzz(15)).toEqual('FizzBuzz');
     });
   });
 });
-
-
-//   it("#mySecondFunction adds two numbers together", function() {
-//
-//     expect(subject.mySecondFunction(10, 5)).toEqual(15);
-//   });
-// });
