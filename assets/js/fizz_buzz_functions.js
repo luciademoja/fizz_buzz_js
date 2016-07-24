@@ -13,6 +13,7 @@ FizzBuzz.prototype.fizzBuzz = function(number) {
   else
     return number;
 }
+
 FizzBuzz.prototype.hasZeroReminder = function(number, dividend) {
   return number % dividend == 0;
 }
