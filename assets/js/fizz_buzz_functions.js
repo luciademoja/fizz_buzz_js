@@ -4,6 +4,12 @@ FizzBuzz.prototype.fizzBuzz = function(number) {
   if(this.divisibleByFifteen(number)) {
     return 'FizzBuzz';
   }
+  else if(this.divisibleByFive(number)) {
+    return 'Buzz';
+  }
+  else if(this.divisibleByThree(number)) {
+    return 'Fizz';
+  }
   else
     return number;
 }

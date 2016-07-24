@@ -30,5 +30,13 @@ describe("FizzBuzz", function() {
     it("Tests for divisibleByFifteen to return FizzBuzz", function() {
       expect(subject.fizzBuzz(15)).toEqual('FizzBuzz');
     });
+
+    it("Tests for divisibleByFive to return Buzz", function() {
+      expect(subject.fizzBuzz(5)).toEqual('Buzz');
+    });
+
+    it("Tests for divisibleByThree to return Fizz", function() {
+      expect(subject.fizzBuzz(3)).toEqual('Fizz');
+    });
   });
 });
