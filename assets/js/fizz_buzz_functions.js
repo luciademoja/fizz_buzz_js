@@ -1,31 +1,30 @@
-function FizzBuzz() {};
-
-FizzBuzz.prototype.fizzBuzz = function(number) {
-  if(this.divisibleByFifteen(number)) {
+function fizzBuzz(number) {
+  if(divisibleByFifteen(number)) {
     return 'FizzBuzz';
   }
-  else if(this.divisibleByFive(number)) {
+  else if(divisibleByFive(number)) {
     return 'Buzz';
   }
-  else if(this.divisibleByThree(number)) {
+  else if(divisibleByThree(number)) {
     return 'Fizz';
   }
   else
     return number;
 }
 
-FizzBuzz.prototype.hasZeroReminder = function(number, dividend) {
+
+function hasZeroReminder(number, dividend) {
   return number % dividend == 0;
 }
 
-FizzBuzz.prototype.divisibleByThree = function (number) {
-  return this.hasZeroReminder(number, 3);
+function divisibleByThree(number) {
+  return hasZeroReminder(number, 3);
 }
 
-FizzBuzz.prototype.divisibleByFive = function (number) {
-  return this.hasZeroReminder(number, 5);
+function divisibleByFive(number) {
+  return hasZeroReminder(number, 5);
 }
 
-FizzBuzz.prototype.divisibleByFifteen = function (number) {
-  return this.hasZeroReminder(number, 15);
+function divisibleByFifteen(number) {
+  return hasZeroReminder(number, 15);
 }

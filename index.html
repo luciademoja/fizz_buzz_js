@@ -5,15 +5,17 @@
     <title>Play The Fizz Buzz Game</title>
   </head>
   <body>
-    <script src="assets/js/fizz_buzz_functions.js"></script>
-    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
-    <script src="assets/js/app.js"></script>
     <h3>FizzBuzz Game</h3>
-    <input type="text" id="number" placeholder="Input some text">
-    <input type="button" id="click_me" value="Click me">
+    <input type="text" id="number" placeholder="Type a number..">
+    <input type="button" id="click_me" value="Try it!">
     <div>
       <span id="display_message"></span>
     </div>
+    <br>
+    <p>To find out if your selected number is divisible by 3, 5 or 15, type it in the box and look for "Fizz", "Buzz" or "FizzBuzz"!</p>
+    <script src="assets/js/fizz_buzz_functions.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <script src="assets/js/app.js"></script>
     <script type="text/javascript">
       $(document).ready(onReadyEvents);
     </script>
