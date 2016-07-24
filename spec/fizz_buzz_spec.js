@@ -24,6 +24,12 @@ describe("FizzBuzz", function() {
   it("Check if number is divisible by 15", function() {
       expect(subject.divisibleByFifteen(15)).toBe(true);
   });
+
+  describe("FizzBuzz.fizzBuzz", function() {
+    it("Tests for divisibleByThree to return Fizz", function() {
+      expect(subject.fizzBuzz(6)).toEqual('Fizz');
+    });
+  });
 });
 
 
