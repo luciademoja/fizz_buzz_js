@@ -4,7 +4,6 @@ FizzBuzz.prototype.hasZeroReminder = function(number, dividend) {
   return number % dividend == 0;
 }
 
-// SampleObject.prototype.mySecondFunction = function (val_1, val_2) {
-//   var result = val_1 + val_2;
-//   return result
-// }
+FizzBuzz.prototype.divisibleByThree = function (number) {
+  return this.hasZeroReminder(number, 3);
+}
